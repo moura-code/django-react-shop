@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% load static %}
+        <title>Hello, World!</title>
+        <link rel="stylesheet"  type="text/css" href="{% static 'css/estilo.css' %}">
+        <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+    <div class="formularioRe" id="sesion">
+    <form class="form1" >
+    <label >Nombre:</label><br>
+    <input type="text" name="usuario"/><br>
+    <label >DNI:</label><br>
+    <input type="text" name="contraseña"/><br>
+    <label class="col-sm-2 control-label">Entidad</label><br>
+    <select class="form-control" id="slcNacionalidad">
+        <option value="0">Persona</option>
+        <option value="1">Empresa</option>
+    </select><br>
+    <label >Telefono:</label><br>
+    <input type="text" name="contraseña"/><br>
+    <label >Direccion:</label><br>
+        <textarea placeholder="Escribe tu direccion" ></textarea><br>
+    <label >Contraseña:</label><br>
+        <input type="text" name="contraseña"/><br>
+    <button type="submit">Create</button><br>
+    <a href="" >Ya tengo cuenta Iniciar Sesion</a>
+    </form></div>
+    </body>
+    <script src="{% static 'js/registro.js' %}"></script>
+</html>

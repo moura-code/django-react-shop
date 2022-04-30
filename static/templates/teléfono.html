@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+margin:0px;
+}
+body {
+  background: white;
+}
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.2) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.2) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 40%;
+  position: absolute;
+  width: 360px;
+  height: 600px;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: #666;
+  border-width: 24px 24px 80px;
+}
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: white;
+  border-radius:20px;
+  z-index: 1;
+}
+/* The screen (or content) of the device */
+.laptop .content {
+  width:360px;
+  height: 600px;
+  overflow: hidden;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<div class="laptop">
+  <div class="content">
+    <iframe src="index.html" style="width:100%;border:none;height:100%" />
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

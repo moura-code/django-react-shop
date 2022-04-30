@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <title>Hello, World!</title>
+    </head>
+    <body>
+        <input type="text" class="numero">
+        <input type="text" class="numero">
+        <input type="text" class="numero">
+        <input type="button" value="Capturar" onclick="Capturar()">
+        <p id="demo"></p>
+        <script>
+        var 
+        Capturar = function(){ 
+        let lstNumero = document.getElementsByClassName("numero"),
+        arrayGuardar = []; 
+        for (var i = 0; i < lstNumero.length; i++) {
+        arrayGuardar[i] = lstNumero[i].value;
+        document.getElementById("demo").innerHTML=lstNumero[i].value;
+            }
+            }</script>
+    </body>
+</html>
